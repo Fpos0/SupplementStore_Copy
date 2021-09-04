@@ -150,10 +150,15 @@ export const Benefits = styled.div`
 
 export const Products = styled.div`
   width: 100%;
+  padding-bottom: 40px;
 `;
 
 export const Banners = styled.div``;
 
 export const HeaderContainer = styled.div`
   margin-bottom: 10px;
+`;
+
+export const FooterContainer = styled.div`
+  background-color: ${({ theme }) => theme.colors.footer1};
 `;

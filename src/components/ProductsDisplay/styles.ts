@@ -26,6 +26,10 @@ export const Title = styled.div`
     padding: 5px;
 
     text-align: center;
+
+    span {
+      color: #3399cc;
+    }
   }
 `;
 

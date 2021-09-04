@@ -26,19 +26,25 @@ import {
   Products,
   HeaderContainer,
   CartContainer,
-  FirstOption
+  FirstOption,
+  FooterContainer
 } from '../styles/pages/Home';
 
 import { IoCartOutline } from 'react-icons/io5';
 import { SearchBar } from '../components/SearchBar';
 import { ProductsMenu } from '../components/ProductsMenu';
 import { ProductsDisplay } from '../components/ProductsDisplay';
+import { Footer } from '../components/Footer';
 
 const Home: React.FC = () => {
+  const dataTitle = '<p>WHEY PROTEIN <span> EM DESTAQUE </span></p>';
+  const dataTitle2 =
+    '<p><span> SUPLEMENTOS PARA GANHO DE  </span>MASSA MUSCULAR </p>';
+  const dataTitle3 = '<p><span> IMPERDÍVEIS </span>OS SUPLEMENTOS  </p>';
   return (
     <Container>
       <Head>
-        <title>Homepage</title>
+        <title>Suplementos Alimentares - Pesadao ihiiii</title>
       </Head>
       <HeaderOffset></HeaderOffset>
       <HeaderContainer>
@@ -95,9 +101,14 @@ const Home: React.FC = () => {
           <Image src={benefits3} />
         </Benefits>
         <Products>
-          <ProductsDisplay />
+          <ProductsDisplay title={dataTitle} />
+          <ProductsDisplay title={dataTitle2} />
+          <ProductsDisplay title={dataTitle3} />
         </Products>
       </Content>
+      <FooterContainer>
+        <Footer />
+      </FooterContainer>
     </Container>
   );
 };

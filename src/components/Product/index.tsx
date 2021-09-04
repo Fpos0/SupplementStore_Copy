@@ -9,49 +9,60 @@ import {
   BlueLabel,
   ProductInfo,
   PriceBox,
-  Price,
+  SpecialPrice,
   Details,
   TypeOfPayment,
-  ProductLabel
+  ProductLabel,
+  OldPriceContainer
 } from './styles';
-import whey1 from '../../assets/whey1.png';
+// import whey1 from '../../assets/whey1.png';
 
 interface Props {
-  image: StaticImageData;
-  title: string;
-  brand: string;
-  offPrice?: number;
-  price: number;
-  formatedPrice: string;
-  card: {
-    months: string;
-    pricePerMonth: string;
+  data: {
+    image: StaticImageData;
+    title: string;
+    brand: string;
+    discountAmount?: string;
+    price: string;
+    specialPrice: string;
+    formatedPrice: string;
+    oldPrice: string;
+    card: {
+      months: string;
+      pricePerMonth: string;
+    };
   };
 }
-export function Product() {
+export function Product({ data }: Props) {
+  const SplitPrice = data.specialPrice.split(',');
   return (
     <Container>
       <Link href="/" passHref>
         <ProductImage>
           <ProductLabel />
-          <Image src={whey1} />
+          <Image src={data.image} />
         </ProductImage>
       </Link>
       <ProductInfo>
         <BlueLabel>
-          <a href="">100% PURE WHEY (900G) PROBIÓTICA + COQUETELEIRA GRÁTIS</a>
+          <a href="">{data.title}</a>
         </BlueLabel>
-        <GrayLabel style={{ textTransform: 'uppercase' }}>PROBIÓTICA</GrayLabel>
-
-        <BlueLabel>10%</BlueLabel>
-
+        <GrayLabel style={{ textTransform: 'uppercase' }}>
+          {data.brand}
+        </GrayLabel>
+        <BlueLabel>{data.discountAmount}</BlueLabel>
         <PriceBox>
-          <GrayLabel>De: R$149,90 R$138,07</GrayLabel>
+          <OldPriceContainer>
+            De: <span>{data.oldPrice}</span> {data.price}
+          </OldPriceContainer>
           <GrayLabel>
             2 x de <span>R$69,04</span> sem juros
           </GrayLabel>
         </PriceBox>
-        <Price>124,26</Price>
+        <SpecialPrice>
+          {SplitPrice[0]}
+          <span>,{SplitPrice[1]}</span>
+        </SpecialPrice>
         <TypeOfPayment>À vista</TypeOfPayment>
         <Details>Detalhes</Details>
       </ProductInfo>

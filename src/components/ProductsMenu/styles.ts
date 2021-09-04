@@ -30,7 +30,7 @@ export const Options = styled.div`
 
 export const Option = styled.div`
   padding-left: 10px;
-  padding: 0.5rem 1rem 0.3rem 1rem;
+  padding: 0.5rem 0.7rem 0.3rem 0.7rem;
   height: 100%;
   display: flex;
   align-items: center;

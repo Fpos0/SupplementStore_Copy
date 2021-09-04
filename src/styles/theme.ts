@@ -9,7 +9,10 @@ const theme = {
     menuHover: '#d67c1c',
     headerBorder: '#0079C2',
     headerGray: '#c6c6c6',
-    input: '#aeadb3'
+    input: '#aeadb3',
+    detailsPrice: '#7c7c7c',
+    footer1: '#035f94',
+    newsletterInput: '#ececec'
   }
 };
 

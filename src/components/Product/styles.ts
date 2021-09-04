@@ -65,7 +65,7 @@ export const PriceBox = styled.div`
   padding: 5px 0px;
 `;
 
-export const Price = styled.p`
+export const SpecialPrice = styled.p`
   text-align: center;
   font-size: 64px;
   font-weight: bold;
@@ -74,10 +74,14 @@ export const Price = styled.p`
   text-decoration: none;
   letter-spacing: -3px;
   padding-bottom: 3px;
+
+  span {
+    font-size: 38px;
+  }
 `;
 export const TypeOfPayment = styled.p`
   font-size: 11px;
-  color: #7c7c7c;
+  color: ${({ theme }) => theme.colors.detailsPrice};
   line-height: 11px;
   padding: 3px 0px;
 `;
@@ -113,4 +117,15 @@ export const ProductLabel = styled.div`
   right: -8px;
   bottom: 0;
   position: absolute;
+`;
+
+export const OldPriceContainer = styled.div`
+  font-size: 11px;
+  color: ${({ theme }) => theme.colors.detailsPrice};
+  line-height: 11px;
+  padding: 3px 0px;
+
+  span {
+    text-decoration: line-through;
+  }
 `;
