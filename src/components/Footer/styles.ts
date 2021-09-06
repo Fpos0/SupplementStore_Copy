@@ -36,7 +36,7 @@ export const NewsletterContent = styled.div`
     display: flex;
     align-items: center;
     padding-left: 1rem;
-    width: 90%;
+    width: 80%;
     white-space: nowrap;
     button {
       color: #885f23;
@@ -77,6 +77,10 @@ export const Contact = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 export const ContactTitle = styled.div`
@@ -110,6 +114,7 @@ export const Numbers = styled.div`
 `;
 
 export const Links = styled.div`
+  width: 80%;
   display: flex;
   div {
     margin-right: 15px;
@@ -125,5 +130,59 @@ export const Links = styled.div`
         color: ${({ theme }) => theme.colors.footer1};
       }
     }
+  }
+`;
+export const Subfooter = styled.div`
+  display: flex;
+`;
+
+export const SubfooterLinks = styled.div`
+  text-transform: uppercase;
+  padding: 0 10px 0 0;
+  margin: 18px 10px 0 0;
+
+  border-right: 0.5px solid #4393ca;
+  &:last-child {
+    border-right: 0;
+  }
+
+  div {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #003553;
+    border: 0;
+    line-height: 22px;
+    white-space: nowrap;
+  }
+
+  a {
+    color: #fff;
+    font-size: 9px;
+    line-height: 10px;
+    text-decoration: none;
+  }
+  ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0 6px 0 0;
+    padding: 0;
+    text-align: left;
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+    li {
+      word-break: break-all;
+      line-height: 12px;
+    }
+  }
+`;
+
+export const Certicates = styled.div`
+  ul {
+    display: inline-block;
+
+    margin-right: 5px;
+    margin-top: 50px;
+    list-style: none;
   }
 `;

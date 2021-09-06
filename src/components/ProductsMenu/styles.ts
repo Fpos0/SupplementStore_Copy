@@ -15,6 +15,7 @@ export const Options = styled.div`
   padding-left: 10px;
   padding-right: 10px;
 
+  white-space: nowrap;
   @media (min-width: 1156px) {
     width: 1090px;
   }
@@ -36,6 +37,12 @@ export const Option = styled.div`
   align-items: center;
   border-right: 1px solid #00a0d4;
 
+  @media screen and (min-width: 768px) and (max-width: 1180px) {
+    padding: 0.5rem 0.3rem 0.3rem 0.3rem;
+    a {
+      font-size: 10px;
+    }
+  }
   &:hover {
     background-color: ${({ theme }) => theme.colors.menuHover};
   }
@@ -48,6 +55,10 @@ export const Option = styled.div`
     font-weight: normal;
     height: 25px;
     text-align: center;
+
+    @media screen and (min-width: 768px) and (max-width: 900px) {
+      font-size: 12px;
+    }
   }
 
   &:first-of-type {

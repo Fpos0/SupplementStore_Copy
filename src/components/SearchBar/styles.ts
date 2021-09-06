@@ -6,11 +6,17 @@ export const Container = styled.div`
   width: 100%;
   button {
     padding-top: 1%;
-    width: 8%;
+
     height: 40px;
+    width: 40px;
     background-color: ${({ theme }) => theme.colors.menu};
     color: ${({ theme }) => theme.colors.background};
     border: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    right: 0;
   }
 `;
 

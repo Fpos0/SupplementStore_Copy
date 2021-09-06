@@ -37,5 +37,13 @@ export const Products = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 10px;
+
   gap: 1rem;
+
+  @media screen and (max-width: 788px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
