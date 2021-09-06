@@ -405,7 +405,7 @@ export function Footer() {
                 href="https://www.madrugaosuplementos.com.br/por-que-madrugao/"
                 rel="nofollow"
               >
-                Por que "Madrugão"?
+                Por que &quot;Madrugão&quot;?
               </a>
             </li>
             <li>
