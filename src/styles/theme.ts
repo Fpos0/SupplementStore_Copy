@@ -12,6 +12,7 @@ const theme = {
     input: '#aeadb3',
     detailsPrice: '#7c7c7c',
     footer1: '#035f94',
+    footer2: '#0078be',
     newsletterInput: '#ececec'
   }
 };

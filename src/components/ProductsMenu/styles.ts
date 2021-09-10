@@ -4,6 +4,10 @@ export const Container = styled.div`
   width: 100%;
   height: 36px;
   background-color: ${({ theme }) => theme.colors.menu};
+
+  @media screen and (max-width: 777px) {
+    height: auto;
+  }
 `;
 
 export const Options = styled.div`
@@ -24,8 +28,18 @@ export const Options = styled.div`
     width: 960px;
   }
 
-  @media (min-width: 768px) and (max-width: 991px) {
+  @media (min-width: 778px) and (max-width: 991px) {
     width: 740px;
+  }
+
+  @media screen and (max-width: 777px) {
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+
+    div {
+      border: 0;
+    }
   }
 `;
 

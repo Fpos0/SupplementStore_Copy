@@ -16,13 +16,15 @@ import {
   Benefits,
   Products,
   HeaderContainer,
-  FooterContainer
+  FooterContainer,
+  FooterLinksContainer
 } from '../styles/pages/Home';
 
 import { Header } from '../components/Header';
 
 import { ProductsDisplay } from '../components/ProductsDisplay';
 import { Footer } from '../components/Footer';
+import { FooterTwo } from '../components/FooterTwo';
 
 const Home: React.FC = () => {
   const dataTitle = '<p>WHEY PROTEIN <span> EM DESTAQUE </span></p>';
@@ -60,6 +62,9 @@ const Home: React.FC = () => {
       <FooterContainer>
         <Footer />
       </FooterContainer>
+      <FooterLinksContainer>
+        <FooterTwo />
+      </FooterLinksContainer>
     </Container>
   );
 };

@@ -61,3 +61,7 @@ export const HeaderContainer = styled.div`
 export const FooterContainer = styled.div`
   background-color: ${({ theme }) => theme.colors.footer1};
 `;
+
+export const FooterLinksContainer = styled.div`
+  background-color: ${({ theme }) => theme.colors.footer2};
+`;
