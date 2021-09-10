@@ -422,9 +422,9 @@ export function FooterTwo() {
       </Container>
       <Copyright>
         <address>
-          Madrugão Suplementos - CNPJ: 18.571.148/0001-41 - Rua Lacerdópolis,
-          1465 - Nova América - 29111-875 - Vila Velha/ES <br /> Copyright ©
-          2003-2020 MadrugaoSuplementos.com.br.Todos os direitos reservados.
+          Pesadão Suplementos - CNPJ: 12.345.678/0001-13 - Rua Do Além, 1948 -
+          Velha América - 29111-875 - Vila Nova/ERX <br /> Copyright © 2003-2020
+          Todos os direitos reservados.
         </address>
       </Copyright>
     </>

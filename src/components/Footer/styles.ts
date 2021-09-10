@@ -20,7 +20,9 @@ export const Container = styled.div`
 `;
 export const Content = styled.div`
   padding: 1rem 7rem;
-
+  @media screen and (max-width: 777px) {
+    padding: 0;
+  }
   p {
     font-size: 11px;
     line-height: 12px;
@@ -30,27 +32,12 @@ export const Content = styled.div`
 export const NewsletterContent = styled.div`
   padding-top: 13px;
   display: grid;
-  grid-template-columns: 150px auto;
+  grid-template-columns: min-content 1fr min-content;
   grid-template-rows: 1fr;
   div {
-    display: flex;
-    align-items: center;
     padding-left: 1rem;
-    width: 80%;
+    width: 95%;
     white-space: nowrap;
-    button {
-      color: #885f23;
-      text-transform: uppercase;
-
-      line-height: 19px;
-      height: 33px;
-      padding: 0 7px;
-      background-color: #ff9900;
-      text-align: center;
-      border: 0;
-      transition: all 0.8s linear;
-      font: 700 12px Titillium Web, sans-serif;
-    }
   }
   h4 {
     margin-top: 6px;
@@ -61,7 +48,7 @@ export const NewsletterContent = styled.div`
   }
   input {
     padding-left: 1rem;
-    width: 85%;
+    width: 100%;
     margin-right: 2rem;
     background-color: ${({ theme }) => theme.colors.newsletterInput};
     font-size: 16px;
@@ -71,6 +58,20 @@ export const NewsletterContent = styled.div`
     border: 0;
     outline: none;
   }
+  button {
+    justify-self: start;
+    color: #885f23;
+    text-transform: uppercase;
+
+    line-height: 19px;
+    height: 33px;
+    padding: 0 7px;
+    background-color: #ff9900;
+    text-align: center;
+    border: 0;
+    transition: all 0.8s linear;
+    font: 700 12px Titillium Web, sans-serif;
+  }
 `;
 
 export const Contact = styled.div`
@@ -78,7 +79,7 @@ export const Contact = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
   }
 `;
@@ -110,12 +111,17 @@ export const Numbers = styled.div`
       display: flex;
       justify-content: space-between;
     }
+    margin-bottom: 5px;
+  }
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
   }
 `;
 
 export const Links = styled.div`
   width: 80%;
   display: flex;
+  margin-bottom: 15px;
   div {
     margin-right: 15px;
     width: 40px;
@@ -130,5 +136,9 @@ export const Links = styled.div`
         color: ${({ theme }) => theme.colors.footer1};
       }
     }
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    justify-content: center;
   }
 `;

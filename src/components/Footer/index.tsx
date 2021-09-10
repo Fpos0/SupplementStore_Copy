@@ -35,9 +35,8 @@ export function Footer() {
               title="Assine nossa newsletter"
               className="input-text required-entry validate-email"
             />
-
-            <button type="submit">ASSINAR</button>
           </div>
+          <button type="submit">ASSINAR</button>
         </NewsletterContent>
 
         <Contact>

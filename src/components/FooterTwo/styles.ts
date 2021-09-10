@@ -21,6 +21,12 @@ export const Container = styled.div`
 export const Subfooter = styled.div`
   background-color: #0078be;
   display: flex;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    div {
+      border: 0;
+    }
+  }
 `;
 
 export const SubfooterLinks = styled.div`
@@ -75,6 +81,16 @@ export const Certicates = styled.div`
   justify-content: space-around;
   @media screen and (max-width: 767px) {
     flex-direction: column;
+
+    ul {
+      flex-direction: column;
+    }
+
+    div:last-of-type {
+      img {
+        width: 90%;
+      }
+    }
   }
   margin: 15px 0px;
 

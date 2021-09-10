@@ -171,7 +171,7 @@ export const MobileTopRight = styled.div`
   display: block;
   position: absolute;
   line-height: 16px;
-  top: 42px;
+  top: 15px;
   right: 0;
   font-size: 11px;
   text-transform: uppercase;
@@ -238,5 +238,6 @@ export const MobileCart = styled.div`
     font-size: 14px;
     line-height: 21px;
     font-weight: normal;
+    white-space: nowrap;
   }
 `;
