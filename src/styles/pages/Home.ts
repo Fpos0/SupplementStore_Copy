@@ -37,7 +37,8 @@ export const SlimBanner = styled.div`
   padding: 1.5rem 0 0.5rem 0;
 `;
 
-export const MainBanner = styled.div`
+export const MainBanner2 = styled.div`
+  position: relative;
   width: 100%;
 `;
 
