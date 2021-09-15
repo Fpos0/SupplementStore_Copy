@@ -43,20 +43,19 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **[ESLint](https://eslint.org/)**
 -   **[react-spring](https://react-spring.io/)**
 
-react-spring
-## Imagens
+
 ## Imagens
 <h3 >
   Desktop
 </h3>
- <img alt="Selecionando Data" title="Selecionando Data" src="./public/preview/pesadaomain.gif" width="200"/>
+ <img alt="Selecionando Data" title="Selecionando Data" src="./public/preview/pesadaomain.gif" width="100%"/>
 
 
 
 <h3>
   Mobile
  </h3>
-    <img alt="Detalhes do Carro" title="Detalhes do Carro" src="./public/preview/pesadaomobile.gif" width="200" />
+    <img alt="Detalhes do Carro" title="Detalhes do Carro" src="./public/preview/pesadaomobile.gif" width="400" />
 
 
 
