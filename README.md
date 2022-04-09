@@ -1,9 +1,10 @@
 # Pesadão Suplementos , copia do Madrugadão Suplementos
 
 
-## 💻 Sobre o projeto
+## 💻 Sobre o projeto / About the Project
   Este projeto consiste em copiar o layout da loja de suplementos Madrugadão
-
+  
+  This project consists of copying the layout of a Brazilian supplement store called "Madrugadao"
 
 [Madrugadão Suplementos Website  ](https://www.madrugaosuplementos.com.br/)
 
@@ -33,6 +34,8 @@ $ yarn api
 ## 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
+
+The following tools were used in the construction of the project:
 
 -   **[Axios](https://github.com/axios/axios)**
 -   **[JSON Server](https://github.com/typicode/json-server)**
@@ -70,6 +73,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 
 Feito por Flavio Segundo 👋🏽 Entre em contato!
+  
+ Made by Flavio Segundo 👋🏽 Get in touch!
 
 [![Linkedin Badge](https://img.shields.io/badge/-FlavioFpos-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/flavio-p-o-segundo-889b25108/)](https://www.linkedin.com/in/flavio-p-o-segundo-889b25108/)
 |
